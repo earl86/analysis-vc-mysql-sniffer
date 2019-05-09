@@ -1,0 +1,6 @@
+vc-mysql-sniffer - A free tool to output query traffic for MySQL
+
+To run: Simply execute the binary to see queries written to stdout in 
+the format used by MySQL's slow query log. Add the -output=[filename] option
+to write the output to the specified file instead.
+
