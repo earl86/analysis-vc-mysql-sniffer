@@ -4,4 +4,6 @@ To run: Simply execute the binary to see queries written to stdout in
 the format used by MySQL's slow query log. Add the -output=[filename] option
 to write the output to the specified file instead.
 
-python analysis-vc-log.py yourip 3306 | sort | uniq -c | sort -nr |head -n 10
+use:
+python analysis-vc-log.py -i mysqlip -p 3306 -t 60 -a my
+python analysis-vc-log.py -i mysqlip -p 3306 -t 60 -a pt
